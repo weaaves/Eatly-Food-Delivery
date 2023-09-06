@@ -1,3 +1,11 @@
 .arrow {
   fill: var(--color-primary-light);
+
+  &--grey {
+    fill: var(--color-card-grey);
+
+    &:hover {
+      fill: var(--color-brand-purple);
+    }
+  }
 }

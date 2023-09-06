@@ -1,3 +1,7 @@
 .stars {
   fill: var(--color-gold);
+
+  &__star {
+    fill: var(--color-brand-purple);
+  }
 }

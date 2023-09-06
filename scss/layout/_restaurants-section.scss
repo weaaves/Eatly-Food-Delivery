@@ -1,0 +1,50 @@
+.restaurants-section {
+  padding-bottom: 120px;
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &::after {
+      position: absolute;
+      bottom: -120px;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: var(--color-primary-lightgrey);
+      opacity: 0.15;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 45px;
+    color: var(--color-darkpurple);
+    margin-bottom: 86px;
+  }
+
+  &__span {
+    color: var(--color-brand-purple);
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 20px;
+    color: var(--color-card-grey);
+
+    &:hover {
+      color: var(--color-brand-purple);
+    }
+  }
+}
