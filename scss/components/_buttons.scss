@@ -1,0 +1,40 @@
+.button {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: "Inter", sans-serif;
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-purple);
+  border-radius: 12px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-brand-dark);
+  }
+
+  &--transparent {
+    color: var(--color-third-grey);
+    background-color: transparent;
+
+    &:hover {
+      color: var(--color-brand-purple);
+      background-color: transparent;
+    }
+  }
+
+  &--noborder {
+    border: 0;
+  }
+
+  &--white {
+    color: var(--color-brand-purple);
+    background-color: var(--color-primary-light);
+    border: 1.5px solid var(--color-brand-purple);
+
+    &:hover {
+      color: var(--color-brand-dark);
+      background-color: var(--color-primary-light);
+      border: 1.5px solid var(--color-brand-dark);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.link {
+  color: var(--color-third-grey);
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  text-transform: capitalize;
+
+  &:hover {
+    color: var(--color-brand-purple);
+  }
+}
