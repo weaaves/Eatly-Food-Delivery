@@ -89,17 +89,17 @@
                 src="./images/hero-main-food.png"
                 alt="food"
               />
-              <div class="hero-section__flow">
+              <div class="hero-section__flow flow">
                 <img
-                  class="hero-section__flow-img"
+                  class="flow__img"
                   src="./images/hero-main-food.png"
                   alt="mini food"
                 />
-                <div class="hero-section__flow-text">
-                  <h2 class="hero-section__flow-title">Chicken Hell</h2>
-                  <p class="hero-section__flow-paragraph">On The Way</p>
+                <div class="flow__text">
+                  <h2 class="flow__title">Chicken Hell</h2>
+                  <p class="flow__paragraph">On The Way</p>
                 </div>
-                <p class="hero-section__flow-time">3:09 PM</p>
+                <p class="flow__time">3:09 PM</p>
               </div>
               <div class="hero-section__graph">
                 <img src="./images/hero-graph.png" alt="graph" />
@@ -281,8 +281,8 @@
                 </article>
               </li>
             </ul>
-            <div class="restaurants-section__button">
-              <a class="restaurants-section__link">View All</a>
+            <div class="link__button">
+              <a class="link__text">View All</a>
               <svg class="arrow arrow--grey" width="14" height="30">
                 <use href="./images/icons.svg#icon-arrow-right"></use>
               </svg>
@@ -292,7 +292,328 @@
       </section>
       <section class="dishes-section">
         <div class="container">
-          <h2>Our Top Dishes</h2>
+          <h2 class="dishes-section__title">
+            Our Top <span class="dishes-section__span">Dishes</span>
+          </h2>
+          <div class="dishes-section__container">
+            <ul class="dishes-section__menu">
+              <li>
+                <article class="dishes-card">
+                  <img
+                    class="dishes-card__photo"
+                    src="./images/dishes-photo1.png"
+                    alt=""
+                  />
+                  <p class="dishes-card__text">Healthy</p>
+                  <h2 class="dishes-card__title">Chicken Hell</h2>
+
+                  <div class="dishes-card__paragraph">
+                    <p>24min</p>
+                    <svg class="stars__star" width="25" height="25">
+                      <use href="./images/icons.svg#icon-Star-little"></use>
+                    </svg>
+                    <p>4.8</p>
+                  </div>
+                  <div class="dishes-card__bookmark">
+                    <p class="dishes-card__bookmark-text">
+                      $12<span class="dishes-card__span">.99</span>
+                    </p>
+                    <svg class="plus" width="35" height="32">
+                      <use href="./images/icons.svg#icon-plus"></use>
+                    </svg>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="dishes-card">
+                  <img
+                    class="dishes-card__photo"
+                    src="./images/dishes-photo2.png"
+                    alt=""
+                  />
+                  <p class="dishes-card__text dishes-card__text--red">
+                    Trending
+                  </p>
+                  <h2 class="dishes-card__title">Chicken Hell</h2>
+
+                  <div class="dishes-card__paragraph">
+                    <p>24min</p>
+                    <svg class="stars__star" width="25" height="25">
+                      <use href="./images/icons.svg#icon-Star-little"></use>
+                    </svg>
+                    <p>4.8</p>
+                  </div>
+                  <div class="dishes-card__bookmark">
+                    <p class="dishes-card__bookmark-text">
+                      $12<span class="dishes-card__span">.99</span>
+                    </p>
+                    <svg class="plus" width="35" height="32">
+                      <use href="./images/icons.svg#icon-plus"></use>
+                    </svg>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="dishes-card">
+                  <img
+                    class="dishes-card__photo"
+                    src="./images/dishes-photo3.png"
+                    alt=""
+                  />
+                  <p class="dishes-card__text dishes-card__text--green">
+                    Supreme
+                  </p>
+                  <h2 class="dishes-card__title">Chicken Hell</h2>
+
+                  <div class="dishes-card__paragraph">
+                    <p>24min</p>
+                    <svg class="stars__star" width="25" height="25">
+                      <use href="./images/icons.svg#icon-Star-little"></use>
+                    </svg>
+                    <p>4.8</p>
+                  </div>
+                  <div class="dishes-card__bookmark">
+                    <p class="dishes-card__bookmark-text">
+                      $12<span class="dishes-card__span">.99</span>
+                    </p>
+                    <svg class="plus" width="35" height="32">
+                      <use href="./images/icons.svg#icon-plus"></use>
+                    </svg>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="dishes-card">
+                  <img
+                    class="dishes-card__photo"
+                    src="./images/dishes-photo4.png"
+                    alt=""
+                  />
+                  <p class="dishes-card__text">Healthy</p>
+                  <h2 class="dishes-card__title">Chicken Hell</h2>
+
+                  <div class="dishes-card__paragraph">
+                    <p>24min</p>
+                    <svg class="stars__star" width="25" height="25">
+                      <use href="./images/icons.svg#icon-Star-little"></use>
+                    </svg>
+                    <p>4.8</p>
+                  </div>
+                  <div class="dishes-card__bookmark">
+                    <p class="dishes-card__bookmark-text">
+                      $12<span class="dishes-card__span">.99</span>
+                    </p>
+                    <svg class="plus" width="35" height="32">
+                      <use href="./images/icons.svg#icon-plus"></use>
+                    </svg>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="dishes-card">
+                  <img
+                    class="dishes-card__photo"
+                    src="./images/dishes-photo5.png"
+                    alt=""
+                  />
+                  <p class="dishes-card__text dishes-card__text--red">
+                    Trending
+                  </p>
+                  <h2 class="dishes-card__title">Chicken Hell</h2>
+
+                  <div class="dishes-card__paragraph">
+                    <p>24min</p>
+                    <svg class="stars__star" width="25" height="25">
+                      <use href="./images/icons.svg#icon-Star-little"></use>
+                    </svg>
+                    <p>4.8</p>
+                  </div>
+                  <div class="dishes-card__bookmark">
+                    <p class="dishes-card__bookmark-text">
+                      $12<span class="dishes-card__span">.99</span>
+                    </p>
+                    <svg class="plus" width="35" height="32">
+                      <use href="./images/icons.svg#icon-plus"></use>
+                    </svg>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="dishes-card">
+                  <img
+                    class="dishes-card__photo"
+                    src="./images/dishes-photo3.png"
+                    alt=""
+                  />
+                  <p class="dishes-card__text dishes-card__text--green">
+                    Supreme
+                  </p>
+                  <h2 class="dishes-card__title">Chicken Hell</h2>
+
+                  <div class="dishes-card__paragraph">
+                    <p>24min</p>
+                    <svg class="stars__star" width="25" height="25">
+                      <use href="./images/icons.svg#icon-Star-little"></use>
+                    </svg>
+                    <p>4.8</p>
+                  </div>
+                  <div class="dishes-card__bookmark">
+                    <p class="dishes-card__bookmark-text">
+                      $12<span class="dishes-card__span">.99</span>
+                    </p>
+                    <svg class="plus" width="35" height="32">
+                      <use href="./images/icons.svg#icon-plus"></use>
+                    </svg>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="dishes-card">
+                  <img
+                    class="dishes-card__photo"
+                    src="./images/dishes-photo1.png"
+                    alt=""
+                  />
+                  <p class="dishes-card__text">Healthy</p>
+                  <h2 class="dishes-card__title">Chicken Hell</h2>
+
+                  <div class="dishes-card__paragraph">
+                    <p>24min</p>
+                    <svg class="stars__star" width="25" height="25">
+                      <use href="./images/icons.svg#icon-Star-little"></use>
+                    </svg>
+                    <p>4.8</p>
+                  </div>
+                  <div class="dishes-card__bookmark">
+                    <p class="dishes-card__bookmark-text">
+                      $12<span class="dishes-card__span">.99</span>
+                    </p>
+                    <svg class="plus" width="35" height="32">
+                      <use href="./images/icons.svg#icon-plus"></use>
+                    </svg>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="dishes-card">
+                  <img
+                    class="dishes-card__photo"
+                    src="./images/dishes-photo2.png"
+                    alt=""
+                  />
+                  <p class="dishes-card__text dishes-card__text--red">
+                    Trending
+                  </p>
+                  <h2 class="dishes-card__title">Chicken Hell</h2>
+
+                  <div class="dishes-card__paragraph">
+                    <p>24min</p>
+                    <svg class="stars__star" width="25" height="25">
+                      <use href="./images/icons.svg#icon-Star-little"></use>
+                    </svg>
+                    <p>4.8</p>
+                  </div>
+                  <div class="dishes-card__bookmark">
+                    <p class="dishes-card__bookmark-text">
+                      $12<span class="dishes-card__span">.99</span>
+                    </p>
+                    <svg class="plus" width="35" height="32">
+                      <use href="./images/icons.svg#icon-plus"></use>
+                    </svg>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <div class="link__button">
+            <a class="link__text">View All</a>
+            <svg class="arrow arrow--grey" width="14" height="30">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="control-section">
+        <div class="container">
+          <div class="control-section__container">
+            <div class="control-section__content">
+              <h2 class="control-section__title">
+                Control <span class="control-section__span">Purchases</span> Via
+                Dashboard
+              </h2>
+              <div class="flow flow--max">
+                <img
+                  class="flow__img flow__img--mini"
+                  src="./images/hero-main-food.png"
+                  alt="mini food"
+                />
+                <div class="flow__text">
+                  <h2 class="flow__title flow__title--max">Chicken Hell</h2>
+                  <p class="flow__paragraph flow__paragraph--max">On The Way</p>
+                </div>
+                <p class="flow__time">3:09 PM</p>
+              </div>
+              <div class="flow flow--max">
+                <img
+                  class="flow__img flow__img--mini"
+                  src="./images/control-bg1.png"
+                  alt="mini food"
+                />
+                <div class="flow__text">
+                  <h2 class="flow__title flow__title--max">Swe Dish</h2>
+                  <p class="flow__paragraph flow__paragraph--max">Delivered</p>
+                </div>
+                <p class="flow__time">Yesterday</p>
+              </div>
+              <div class="flow flow--max">
+                <img
+                  class="flow__img flow__img--mini"
+                  src="./images/control-bg2.png"
+                  alt="mini food"
+                />
+                <div class="flow__text">
+                  <h2 class="flow__title flow__title--max">Fish Hell Veg</h2>
+                  <p
+                    class="flow__paragraph flow__paragraph--red flow__paragraph--max"
+                  >
+                    Cancelled
+                  </p>
+                </div>
+                <p class="flow__time">Yesterday</p>
+              </div>
+            </div>
+            <div class="control-section__card purchase-card">
+              <h2 class="control-section__title control-section__title--max">
+                Purchases
+              </h2>
+              <div class="purchase-card__first-line">
+                <div class="purchase-card__content">
+                  <div class="purchase-card__test">
+                    <svg
+                      class="purchase-card__wallet"
+                      width="25px"
+                      height="25px"
+                    >
+                      <use href="./images/icons.svg#icon-wallet"></use>
+                    </svg>
+                  </div>
+                  <div class="purchase-card__main-text">
+                    <h3 class="purchase-card__title">Expense</h3>
+                    <p class="purchase-card__paragraph">Increased By 10%</p>
+                  </div>
+                  <p class="purchase-card__price">$409.00</p>
+                </div>
+              </div>
+              <div class="purchase-card__second-line">
+                <img src="" alt="" />
+                <div class="purchase-card__main-text">
+                  <h3 class="purchase-card__title">Vocher Usage</h3>
+                  <p class="purchase-card__paragraph">Increased By 5%</p>
+                </div>
+                <p class="purchase-card__price">$45.78</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

@@ -34,17 +34,4 @@
     gap: 30px;
     flex-wrap: wrap;
   }
-
-  &__button {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-shrink: 0;
-    gap: 20px;
-    color: var(--color-card-grey);
-
-    &:hover {
-      color: var(--color-brand-purple);
-    }
-  }
 }

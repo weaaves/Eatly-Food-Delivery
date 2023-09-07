@@ -1,0 +1,9 @@
+.plus {
+  border-radius: 8px;
+  fill: var(--color-primary-light);
+  background-color: var(--color-darkpurple);
+
+  &:hover {
+    background-color: var(--color-brand-purple);
+  }
+}
