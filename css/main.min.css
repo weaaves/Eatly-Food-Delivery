@@ -351,6 +351,10 @@ a {
   position: absolute;
   bottom: -82px;
   left: -106px;
+  transition: transform 0.2s;
+}
+.hero-section__graph:hover {
+  transform: scale(1.05);
 }
 .hero-section__illustration-1-item {
   position: absolute;
@@ -552,12 +556,14 @@ a {
   border-radius: 5.4px;
   background-color: var(--color-card-background);
   max-width: 65px;
+  text-align: center;
 }
 .restaurants-card__text--red {
   color: var(--color-card-red);
   background-color: var(--color-card-redbackground);
 }
 .restaurants-card__title {
+  color: var(--color-brand-dark);
   font-size: 25px;
   font-weight: 600;
   line-height: 1.6;
@@ -635,6 +641,7 @@ a {
   border-radius: 5.4px;
   background-color: var(--color-card-background);
   max-width: 65px;
+  text-align: center;
 }
 .dishes-card__text--red {
   color: var(--color-card-red);
@@ -645,6 +652,7 @@ a {
   background-color: var(--color-card-greenbackground);
 }
 .dishes-card__title {
+  color: var(--color-brand-dark);
   font-size: 23px;
   font-weight: 600;
   line-height: 1.6;
@@ -744,7 +752,7 @@ a {
 }
 .flow:hover {
   box-shadow: 0px 0px 20px -9px rgba(0, 0, 0, 0.75);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .flow--max {
   max-width: 350px;
@@ -814,7 +822,7 @@ a {
   transition: transform 0.2s;
 }
 .purchase-card__items:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 .purchase-card__expence {
   display: flex;

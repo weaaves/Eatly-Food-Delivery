@@ -92,6 +92,11 @@
     position: absolute;
     bottom: -82px;
     left: -106px;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   &__illustration-1-item {
