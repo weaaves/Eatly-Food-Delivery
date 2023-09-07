@@ -1,0 +1,15 @@
+.customer-section {
+  padding-top: 116px;
+
+  &__title {
+    text-align: center;
+    font-size: 45px;
+    color: var(--color-brand-purple);
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+  }
+
+  &__span {
+    color: var(--color-darkpurple);
+  }
+}

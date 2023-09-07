@@ -1,60 +1,95 @@
 .purchase-card {
+  display: flex;
+  flex-direction: column;
   border: 2px solid var(--color-primary-light);
   border-radius: 26px;
   box-shadow: 0px 0px 27px -11px rgba(0, 0, 0, 0.75);
-  padding: 45px 38px;
   width: 534px;
+  padding: 40px;
+  gap: 22px;
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--color-card-border);
+    border-radius: 26px;
+    max-width: 534px;
+    gap: 22px;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__expence {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 22px;
+  }
 
   &__content {
     display: flex;
   }
 
-  &__first-line,
-  &__second-line {
-    border: 2px solid var(--color-card-border);
-    border-radius: 18px;
+  &__column {
     display: flex;
-    align-items: center;
-    padding: 26px;
-  }
-
-  &__first-line {
-    margin-bottom: 22px;
-  }
-
-  &__main-text {
+    flex-direction: column;
     flex-grow: 1;
-    margin-bottom: 56px;
   }
 
   &__title {
     color: var(--color-card-title);
     font-size: 18px;
     font-family: "Manrope", sans-serif;
-    letter-spacing: 0.62px;
     font-weight: 800;
+    letter-spacing: 0.62px;
+  }
+
+  &__text {
+    color: var(--color-card-text-1);
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.62px;
   }
 
   &__price {
     color: var(--color-card-title);
-    font-size: 21px;
-    font-weight: 800;
-    text-align: right;
+    font-size: 22px;
     font-family: "Manrope", sans-serif;
     letter-spacing: 0.31px;
-  }
-
-  &__paragraph {
-    color: var(--color-card-text-1);
+    font-weight: 800;
   }
 
   &__wallet {
     fill: var(--color-brand-purple);
-    border-radius: 50px;
-    background-color: var(--color-purple-light);
-    box-shadow: 0px 0px 0px 10px rgba(197, 191, 237, 1);
+    margin-right: 18px;
   }
-  &__test {
-    padding-right: 18px;
+
+  &__money {
+    fill: var(--color-money);
+    margin-right: 18px;
+  }
+
+  &__line {
+    width: 100%;
+    height: 10px;
+    // background-color: var(--color-brand-purple);
+    background-image: linear-gradient(
+      to right,
+      var(--color-brand-purple) 70%,
+      var(--color-brand-purple-light) 70%
+    );
+    border-radius: 78px;
+
+    &--yellow {
+      background-image: linear-gradient(
+        to right,
+        var(--color-secondary-yellow) 70%,
+        var(--color-secondary-yellow-light) 70%
+      );
+    }
   }
 }

@@ -4,6 +4,7 @@
   font-weight: 500;
   font-family: "Inter", sans-serif;
   text-transform: capitalize;
+  transition: color 0.2s;
 
   &:hover {
     color: var(--color-brand-purple);
@@ -14,8 +15,9 @@
     justify-content: flex-end;
     align-items: center;
     flex-shrink: 0;
-    gap: 20px;
+    gap: 10px;
     color: var(--color-card-grey);
+    transition: color 0.2s;
 
     &:hover {
       color: var(--color-brand-purple);
