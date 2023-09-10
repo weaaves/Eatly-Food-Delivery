@@ -1,0 +1,8 @@
+.social-icons {
+  fill: var(--color-footer-social);
+  transition: fill 0.2s;
+
+  &:hover {
+    fill: var(--color-brand-purple);
+  }
+}

@@ -203,6 +203,10 @@ a {
   --color-brand-purple-light: #6b5fbc36;
   --color-secondary-yellow-light: #fbac183d;
   --color-money: #22c55e;
+  --color-input-placeholder: #878787;
+  --color-footer: #eaeaea;
+  --color-footer-social: #081420;
+  --color-footer-copy: #999;
 }
 
 .link {
@@ -889,4 +893,101 @@ a {
 }
 .customer-section__span {
   color: var(--color-darkpurple);
+}
+
+.discount-section {
+  padding-top: 182px;
+  padding-bottom: 216px;
+}
+.discount-section__form {
+  position: relative;
+  background-color: var(--color-brand-purple);
+  padding: 37px 66px 61px 66px;
+  border-radius: 30px;
+  background-image: url("../images/discount-section-bg.png");
+}
+.discount-section__title {
+  font-size: 70px;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  line-height: normal;
+  color: var(--color-primary-light);
+  opacity: 0.8;
+}
+.discount-section__photo-item {
+  position: absolute;
+  bottom: -72px;
+  right: 72px;
+}
+
+.input-group__input {
+  position: relative;
+  font-size: 16px;
+  color: var(--color-input-placeholder);
+  letter-spacing: 0.44px;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  background-color: var(--color-primary-light);
+  opacity: 0.8;
+  padding: 14px;
+  max-width: 440px;
+  width: 100%;
+}
+.input-group__input:focus-visible {
+  outline: var(--color-brand-dark);
+  border: 2px solid var(--color-brand-dark);
+}
+
+.footer {
+  padding: 96px 0px 80px 0px;
+  background-color: var(--color-footer);
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+}
+.footer__upper {
+  position: relative;
+  padding-bottom: 30px;
+}
+.footer__upper::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-primary-lightgrey);
+  opacity: 0.15;
+}
+.footer__upper, .footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__bottom {
+  padding-top: 58px;
+}
+.footer__menu {
+  display: flex;
+  gap: 70px;
+}
+.footer__social {
+  display: flex;
+  gap: 54px;
+}
+.footer__copy {
+  color: var(--color-footer-copy);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.social-icons {
+  fill: var(--color-footer-social);
+  transition: fill 0.2s;
+}
+.social-icons:hover {
+  fill: var(--color-brand-purple);
 }/*# sourceMappingURL=main.min.css.map */

@@ -1,0 +1,27 @@
+.discount-section {
+  padding-top: 182px;
+  padding-bottom: 216px;
+
+  &__form {
+    position: relative;
+    background-color: var(--color-brand-purple);
+    padding: 37px 66px 61px 66px;
+    border-radius: 30px;
+    background-image: url("../images/discount-section-bg.png");
+  }
+
+  &__title {
+    font-size: 70px;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+    line-height: normal;
+    color: var(--color-primary-light);
+    opacity: 0.8;
+  }
+
+  &__photo-item {
+    position: absolute;
+    bottom: -72px;
+    right: 72px;
+  }
+}
