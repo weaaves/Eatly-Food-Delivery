@@ -1,0 +1,17 @@
+.questions-section {
+  &__title {
+    color: var(--color-brand-dark);
+    font-size: 45px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    max-width: 408px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+  }
+
+  &__span {
+    color: var(--color-brand-purple);
+  }
+}
