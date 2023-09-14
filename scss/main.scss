@@ -1,8 +1,8 @@
+@import "./utils/variables";
 @import "./base";
 @import "./components/section";
 @import "./layout/header";
 @import "./utils/fonts";
-@import "./utils/variables";
 @import "./components/links";
 @import "./components/buttons";
 @import "./layout/hero-section";
@@ -18,9 +18,8 @@
 @import "./layout/control-section";
 @import "./components/flow";
 @import "./components/purchase-card";
-@import "./layout/customer-section";
 @import "./layout/discount-section";
 @import "./components/input-group";
 @import "./layout/footer";
 @import "./components/social-icons";
-@import "./components/customer-card";
+@import "./layout/mobile-menu";

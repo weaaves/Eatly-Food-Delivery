@@ -1,9 +1,9 @@
 .input-group {
   &__input {
     position: relative;
-    font-size: 16px;
+    font-size: 10px;
     color: var(--color-input-placeholder);
-    letter-spacing: 0.44px;
+    letter-spacing: 0.37px;
     text-transform: capitalize;
     font-family: "Poppins", sans-serif;
     border: 2px solid transparent;
@@ -11,8 +11,20 @@
     background-color: var(--color-primary-light);
     opacity: 0.8;
     padding: 14px;
-    max-width: 440px;
+    max-width: 260px;
     width: 100%;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 14px;
+      letter-spacing: 0.34px;
+      max-width: 440px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 16px;
+      letter-spacing: 0.44px;
+      max-width: 440px;
+    }
 
     &:focus-visible {
       outline: var(--color-brand-dark);

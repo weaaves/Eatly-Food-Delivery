@@ -1,19 +1,38 @@
 .hero-section {
-  padding-bottom: 140px;
+  padding-bottom: 35px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-bottom: 140px;
+  }
 
   &__container {
     display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
   }
 
   &__uppertitle {
+    color: var(--color-third-black);
     position: relative;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 600;
     font-family: "Poppins";
     line-height: 1.2;
     letter-spacing: 2px;
     opacity: 0.2;
-    margin-left: 74px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      color: inherit;
+      font-size: 15px;
+      letter-spacing: 2px;
+      text-align: justify;
+      margin-left: 74px;
+    }
 
     &::before {
       position: absolute;
@@ -27,14 +46,35 @@
   }
 
   &__title {
+    text-align: center;
     font-family: "Poppins", sans-serif;
     color: var(--color-third-black);
-    font-size: 75px;
+    font-size: 46px;
     font-weight: 600;
     line-height: 1.2;
-    letter-spacing: -3px;
-    max-width: 576px;
+    letter-spacing: -1.85px;
+    max-width: 332px;
     margin-bottom: 16px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: $bp-tablet) {
+      text-align: start;
+      font-size: 53px;
+      letter-spacing: -2.1px;
+      margin: 0;
+      max-width: 403px;
+      margin-bottom: 11px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      text-align: start;
+      font-size: 75px;
+      letter-spacing: -3px;
+      margin: 0;
+      max-width: 576px;
+      margin-bottom: 16px;
+    }
   }
 
   &__span {
@@ -46,31 +86,72 @@
   }
 
   &__text {
-    max-width: 499px;
-    opacity: 0.7;
-    margin-bottom: 53px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 400;
+    max-width: 307px;
+    margin: 0 auto;
+    margin-bottom: 41px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 12px;
+      text-align: justify;
+      max-width: 354px;
+      opacity: 0.7;
+      margin: 0;
+      margin-bottom: 37px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 18px;
+      max-width: 499px;
+      margin: 0;
+      margin-bottom: 53px;
+    }
   }
 
   &__menu {
     display: flex;
+    justify-content: center;
     gap: 18px;
-    margin-bottom: 33px;
+    margin-bottom: 35px;
+
+    @media screen and (min-width: $bp-tablet) {
+      justify-content: flex-start;
+      margin-bottom: 33px;
+    }
   }
 
   &__button {
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 500;
-    padding: 18px 30px;
+    padding: 14px 24px;
     letter-spacing: 0.1px;
     border-radius: 14px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 16px;
+      padding: 16px 26px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      font-family: "Poppins", sans-serif;
+      padding: 18px 30px;
+    }
   }
 
   &__mark {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 15px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $bp-tablet) {
+      justify-content: flex-start;
+      margin-bottom: 126px;
+    }
   }
 
   &__left,
@@ -79,7 +160,12 @@
   }
 
   &__photo {
-    position: relative;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      position: relative;
+    }
   }
 
   &__flow {

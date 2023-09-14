@@ -1,6 +1,11 @@
 .discount-section {
-  padding-top: 182px;
-  padding-bottom: 216px;
+  padding-top: 80px;
+  padding-bottom: 300px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 182px;
+    padding-bottom: 216px;
+  }
 
   &__form {
     position: relative;
@@ -11,17 +16,37 @@
   }
 
   &__title {
-    font-size: 70px;
+    font-size: 42px;
     font-weight: 800;
     font-family: "Poppins", sans-serif;
     line-height: normal;
     color: var(--color-primary-light);
     opacity: 0.8;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 49px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 70px;
+    }
   }
 
   &__photo-item {
     position: absolute;
-    bottom: -72px;
-    right: 72px;
+    top: 75%;
+    right: 20%;
+
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      bottom: -72px;
+      right: 0%;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      position: absolute;
+      bottom: -72px;
+      right: 72px;
+    }
   }
 }

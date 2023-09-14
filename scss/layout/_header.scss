@@ -1,5 +1,13 @@
 .header {
-  padding: 46px 0 132px 0;
+  padding: 28px 0 62px 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 33px 0 132px 0;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 46px 0 132px 0;
+  }
 
   &__container {
     position: relative;
@@ -23,6 +31,7 @@
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
+    gap: 20px;
   }
 
   &__logo-icon {
@@ -31,21 +40,42 @@
   }
 
   &__menu {
-    display: flex;
-    gap: 54px;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      gap: 54px;
+    }
   }
 
   &__buttons-list {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-grow: 1;
-    gap: 36px;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-grow: 1;
+      gap: 36px;
+    }
   }
 
   &__button {
     padding: 18px 26px;
     border-radius: 18px;
     border: 0;
+  }
+
+  &__burger {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    fill: var(--color-brand-purple);
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
   }
 }

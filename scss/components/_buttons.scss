@@ -1,5 +1,5 @@
 .button {
-  font-size: 18px;
+  font-size: 10px;
   font-weight: 700;
   text-transform: capitalize;
   font-family: "Inter", sans-serif;
@@ -8,6 +8,30 @@
   border-radius: 12px;
   cursor: pointer;
   transition: background-color 0.2s;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: "Inter", sans-serif;
+    color: var(--color-primary-light);
+    background-color: var(--color-brand-purple);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: "Inter", sans-serif;
+    color: var(--color-primary-light);
+    background-color: var(--color-brand-purple);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
 
   &:hover {
     background-color: var(--color-brand-dark);

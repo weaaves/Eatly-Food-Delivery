@@ -9,7 +9,13 @@
 
   &__upper {
     position: relative;
+    gap: 20px;
     padding-bottom: 30px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding-bottom: 44px;
+      gap: 0;
+    }
 
     &::after {
       position: absolute;
@@ -22,25 +28,51 @@
     }
   }
 
-  &__upper,
-  &__bottom {
+  &__upper {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
   }
 
   &__bottom {
-    padding-top: 58px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding-top: 60px;
+      flex-direction: row;
+      gap: 0;
+    }
   }
 
   &__menu {
     display: flex;
-    gap: 70px;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 70px;
+    }
   }
 
   &__social {
     display: flex;
-    gap: 54px;
+    gap: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 54px;
+    }
   }
 
   &__copy {
